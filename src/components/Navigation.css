@@ -1,0 +1,83 @@
+/* Optional: import a modern font for a cleaner look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Apply the font to navbar elements */
+.navbar,
+.nav-link,
+.dropdown-item,
+.btn {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Ensure dropdown doesn't flicker */
+.navbar-nav .dropdown-menu {
+  display: none;
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+/* Show dropdown on hover (using the .show class) */
+.navbar-nav .show .dropdown-menu {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Dropdown items */
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: white;
+  padding: 12px 16px;
+  font-size: 15px;
+  transition: background 0.3s ease-in-out, padding-left 0.2s ease-in-out;
+}
+
+/* Hover effect on dropdown items */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #28c7b7;
+  color: #121212;
+  padding-left: 20px;
+  border-radius: 4px;
+}
+
+/* Navbar brand color & hover */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #20a397;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: white !important;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #28c7b7 !important;
+}
+
+/* Navbar button */
+.navbar-nav .btn-outline-light {
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-nav .btn-outline-light:hover {
+  background-color: #28c7b7;
+  color: #121212;
+}
