@@ -9,17 +9,17 @@ body {
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
+  display: flex;  /* Defines the container as a flex container */
+  justify-content: space-between;  /* Centers child elements horizontally */
+  align-items: center; /* Centers child elements vertically */
+  padding: 15px 40px;  /* Adds inner spacing around the content */  
   background-color: #222;
   color: white;
-  position: fixed;
+  position: fixed;  /* Required for z-index to work */
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1000;   /* Sets the stacking order */
 }
 
 .navbar ul {

@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Fi-Zahid/static/css/main.dccbc129.css",
-    "main.js": "/Fi-Zahid/static/js/main.024d5d03.js",
-    "static/js/453.9c14fed5.chunk.js": "/Fi-Zahid/static/js/453.9c14fed5.chunk.js",
-    "static/media/fa-solid-900.ttf": "/Fi-Zahid/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
-    "static/media/fa-brands-400.ttf": "/Fi-Zahid/static/media/fa-brands-400.1815e00441357e01619e.ttf",
-    "static/media/fa-solid-900.woff2": "/Fi-Zahid/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
-    "static/media/fa-brands-400.woff2": "/Fi-Zahid/static/media/fa-brands-400.c210719e60948b211a12.woff2",
-    "static/media/fa-regular-400.ttf": "/Fi-Zahid/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
-    "static/media/fa-regular-400.woff2": "/Fi-Zahid/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
-    "static/media/fa-v4compatibility.ttf": "/Fi-Zahid/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
-    "static/media/fa-v4compatibility.woff2": "/Fi-Zahid/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
-    "index.html": "/Fi-Zahid/index.html",
-    "main.dccbc129.css.map": "/Fi-Zahid/static/css/main.dccbc129.css.map",
-    "main.024d5d03.js.map": "/Fi-Zahid/static/js/main.024d5d03.js.map",
-    "453.9c14fed5.chunk.js.map": "/Fi-Zahid/static/js/453.9c14fed5.chunk.js.map"
+    "main.css": "/fi-money-clone/static/css/main.eadf0c84.css",
+    "main.js": "/fi-money-clone/static/js/main.7c2c3f19.js",
+    "static/js/453.c7e9fa0e.chunk.js": "/fi-money-clone/static/js/453.c7e9fa0e.chunk.js",
+    "static/media/fa-solid-900.ttf": "/fi-money-clone/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/fi-money-clone/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/fi-money-clone/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/fi-money-clone/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/fi-money-clone/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/fa-regular-400.woff2": "/fi-money-clone/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/fi-money-clone/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/fi-money-clone/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/fi-money-clone/index.html",
+    "main.eadf0c84.css.map": "/fi-money-clone/static/css/main.eadf0c84.css.map",
+    "main.7c2c3f19.js.map": "/fi-money-clone/static/js/main.7c2c3f19.js.map",
+    "453.c7e9fa0e.chunk.js.map": "/fi-money-clone/static/js/453.c7e9fa0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dccbc129.css",
-    "static/js/main.024d5d03.js"
+    "static/css/main.eadf0c84.css",
+    "static/js/main.7c2c3f19.js"
   ]
 }

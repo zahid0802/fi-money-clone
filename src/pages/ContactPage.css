@@ -1,0 +1,28 @@
+/* ContactPage.css */
+
+/* Background and padding for the contact section */
+.contact-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 4rem 0;
+  }
+  
+  /* Styling for the form container */
+  .contact-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the submit button */
+  .contact-button {
+    background-color: #28c7b7;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #20a397;
+  }
+  

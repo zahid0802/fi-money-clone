@@ -1,11 +1,6 @@
+// src/components/Navigation.js
 import React, { useState, useEffect, useRef } from "react";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Button,
-  Container
-} from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
 
@@ -23,20 +18,18 @@ const Navigation = () => {
   const handleMouseLeave = () => setOpenDropdown(null);
 
   useEffect(() => {
-    // This function handles normal scrolling
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY.current) {
-        // User scrolled down
+        // User scrolled down => hide navbar
         setShowNavbar(false);
       } else {
-        // User scrolled up
+        // User scrolled up => show navbar
         setShowNavbar(true);
       }
       lastScrollY.current = currentScrollY;
     };
 
-    // This function handles wheel movements (even if no real scroll occurs)
     const handleWheel = (e) => {
       if (e.deltaY < 0) {
         // Wheel up => show navbar
@@ -47,11 +40,9 @@ const Navigation = () => {
       }
     };
 
-    // Attach both listeners
     window.addEventListener("scroll", handleScroll, { passive: true });
     window.addEventListener("wheel", handleWheel, { passive: true });
 
-    // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("wheel", handleWheel);
@@ -65,11 +56,13 @@ const Navigation = () => {
       style={{
         backgroundColor: "#2d2d2d",
         transition: "transform 0.2s ease-in-out",
-        transform: showNavbar ? "translateY(0)" : "translateY(-100%)"
+        transform: showNavbar ? "translateY(0)" : "translateY(-100%)",
+        position: "relative",
+        zIndex: 9999, // ensures navbar stays on top
       }}
     >
       <Container>
-        {/* Brand / Logo as an image instead of text */}
+        {/* Brand / Logo */}
         <Navbar.Brand as={Link} to="/" className="fw-bold fs-3">
           <img
             src="https://dza2kd7rioahk.cloudfront.net/assets/svgs/logo.svg"
@@ -78,10 +71,7 @@ const Navigation = () => {
           />
         </Navbar.Brand>
 
-        {/* Toggle for mobile view */}
         <Navbar.Toggle aria-controls="navbarNav" />
-
-        {/* Collapsible nav links */}
         <Navbar.Collapse id="navbarNav" className="justify-content-end">
           <Nav>
             {/* ABOUT US Dropdown */}
@@ -101,8 +91,16 @@ const Navigation = () => {
               <NavDropdown.Item as={Link} to="/careers">
                 Careers
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/contact-us">
-                Contact Us
+
+              {/* New Items: Contact, Features, Pricing */}
+              <NavDropdown.Item as={Link} to="/contact">
+                Contact
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/features">
+                Features
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/pricing">
+                Pricing
               </NavDropdown.Item>
             </NavDropdown>
 
@@ -256,7 +254,7 @@ const Navigation = () => {
                 <div className="d-flex flex-column align-items-center">
                   <div style={{ marginBottom: "0.5rem" }}>
                     <a
-                      href="https://play.google.com/store/apps/details?id=com.fi.money"
+                      href="https://play.google.com/store/apps/details?id=com.epifi.paisa&hl=en-US"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -269,7 +267,7 @@ const Navigation = () => {
                   </div>
                   <div>
                     <a
-                      href="https://apps.apple.com/in/app/fi-banking-made-simple/id1569375201"
+                      href="https://apps.apple.com/in/app/fi-money-save-invest-smart/id1531564767"
                       target="_blank"
                       rel="noreferrer"
                     >
